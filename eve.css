@@ -1,1312 +1,1307 @@
-<style>
 @charset "UTF-8";
-/** Arlo reset style **/
-/** End of Arlo reset style **/
-/** Arlo theme style **/
-/** End of theme style **/
-@-webkit-keyframes spinner {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
 
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-@keyframes spinner {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-weight: 500;
+  margin: 0;
+  font-weight: 500;
 }
 
 * {
-	box-sizing: inherit;
-
-	&::after {
-		box-sizing: inherit;
-	}
-
-	&::before {
-		box-sizing: inherit;
-	}
+  box-sizing: inherit;
+}
+*::after, *::before {
+  box-sizing: inherit;
 }
 
+/** Arlo reset style **/
 .arlo {
-	font-size: 16px;
-	font-family: "Source Sans Pro", Arial, Tahoma, sans-serif;
-
-	html {
-		font-family: sans-serif;
-		-ms-text-size-adjust: 100%;
-		-webkit-text-size-adjust: 100%;
-
-		[type="button"] {
-			-webkit-appearance: button;
-		}
-	}
-
-	body {
-		margin: 0;
-	}
-
-	article {
-		display: block;
-	}
-
-	aside {
-		display: block;
-	}
-
-	details {
-		display: block;
-	}
-
-	figcaption {
-		display: block;
-	}
-
-	figure {
-		display: block;
-		margin: 1.5em 40px;
-	}
-
-	footer {
-		display: block;
-	}
-
-	header {
-		display: block;
-	}
-
-	main {
-		display: block;
-	}
-
-	menu {
-		display: block;
-	}
-
-	nav {
-		display: block;
-	}
-
-	section {
-		display: block;
-	}
-
-	summary {
-		display: block;
-	}
-
-	audio {
-		display: inline-block;
-
-		&:not([controls]) {
-			display: none;
-			height: 0;
-		}
-	}
-
-	canvas {
-		display: inline-block;
-	}
-
-	progress {
-		display: inline-block;
-		vertical-align: baseline;
-	}
-
-	video {
-		display: inline-block;
-	}
-
-	template {
-		display: none;
-	}
-
-	[hidden] {
-		display: none;
-	}
-
-	a {
-		background-color: transparent;
-		-webkit-text-decoration-skip: objects;
-		-webkit-transition: 0.3s;
-		transition: 0.3s;
-		text-decoration: none;
-
-		&:active {
-			outline-width: 0;
-			color: #f9b420;
-			text-decoration: none;
-		}
-
-		&:hover {
-			outline-width: 0;
-			color: #f9b420;
-			text-decoration: none;
-		}
-	}
-
-	abbr[title] {
-		border-bottom: none;
-		text-decoration: underline;
-		text-decoration: underline dotted;
-	}
-
-	b {
-		font-weight: inherit;
-		font-weight: bolder;
-	}
-
-	strong {
-		font-weight: inherit;
-		font-weight: bolder;
-	}
-
-	code {
-		font-family: monospace, monospace;
-		font-size: 1em;
-	}
-
-	kbd {
-		font-family: monospace, monospace;
-		font-size: 1em;
-	}
-
-	samp {
-		font-family: monospace, monospace;
-		font-size: 1em;
-	}
-
-	dfn {
-		font-style: italic;
-	}
-
-	h1 {
-		font-size: 2em;
-		margin: 0.75em 0;
-	}
-
-	mark {
-		background-color: #ff0;
-		color: #000;
-	}
-
-	small {
-		font-size: 80%;
-	}
-
-	sub {
-		font-size: 75%;
-		line-height: 0;
-		position: relative;
-		vertical-align: baseline;
-		bottom: -0.25em;
-	}
-
-	sup {
-		font-size: 75%;
-		line-height: 0;
-		position: relative;
-		vertical-align: baseline;
-		top: -0.5em;
-	}
-
-	img {
-		border-style: none;
-	}
-
-	svg {
-		&:not(:root) {
-			overflow: hidden;
-		}
-	}
-
-	hr {
-		box-sizing: content-box;
-		height: 0;
-		overflow: visible;
-	}
-
-	pre {
-		font-family: monospace, monospace;
-		font-size: 1em;
-	}
-
-	button {
-		font: inherit;
-		margin: 0;
-		overflow: visible;
-		text-transform: none;
-		-webkit-appearance: button;
-
-		&::-moz-focus-inner {
-			border-style: none;
-			padding: 0;
-		}
-
-		&:-moz-focusring {
-			outline: 1px dotted ButtonText;
-		}
-	}
-
-	input {
-		font: inherit;
-		margin: 0;
-		overflow: visible;
-	}
-
-	optgroup {
-		font: inherit;
-		margin: 0;
-		font-weight: bold;
-	}
-
-	select {
-		font: inherit;
-		margin: 0;
-		text-transform: none;
-		appearance: none;
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		padding: 10px 70px 14px 18px;
-		background-image: url(https://theme1.demo.arlo.co/wp-content/uploads/2016/07/dropdown-arrow-no-line.png);
-		background-repeat: no-repeat;
-		background-position: 90% center;
-		cursor: pointer;
-		border-radius: 4px;
-		background-color: transparent;
-		color: #55595c;
-		border: 2px solid #ededed;
-		display: inline;
-		background-color: #fcfcfc;
-		border: 2px solid #ededed;
-		border-radius: 4px;
-		font-size: 15.4px;
-		letter-spacing: 0;
-		line-height: 20px;
-		font-weight: 400;
-
-		&:hover {
-			opacity: 0.7;
-		}
-	}
-
-	textarea {
-		font: inherit;
-		margin: 0;
-		overflow: auto;
-	}
-
-	[type="reset"] {
-		-webkit-appearance: button;
-
-		&::-moz-focus-inner {
-			border-style: none;
-			padding: 0;
-		}
-
-		&:-moz-focusring {
-			outline: 1px dotted ButtonText;
-		}
-	}
-
-	[type="submit"] {
-		-webkit-appearance: button;
-
-		&::-moz-focus-inner {
-			border-style: none;
-			padding: 0;
-		}
-
-		&:-moz-focusring {
-			outline: 1px dotted ButtonText;
-		}
-	}
-
-	[type="button"] {
-		&::-moz-focus-inner {
-			border-style: none;
-			padding: 0;
-		}
-
-		&:-moz-focusring {
-			outline: 1px dotted ButtonText;
-		}
-	}
-
-	[type="checkbox"] {
-		box-sizing: border-box;
-		padding: 0;
-	}
-
-	[type="radio"] {
-		box-sizing: border-box;
-		padding: 0;
-	}
-
-	[type="number"] {
-		&::-webkit-inner-spin-button {
-			height: auto;
-		}
-
-		&::-webkit-outer-spin-button {
-			height: auto;
-		}
-	}
-
-	[type="search"] {
-		-webkit-appearance: textfield;
-		outline-offset: -2px;
-
-		&::-webkit-search-cancel-button {
-			-webkit-appearance: none;
-		}
-
-		&::-webkit-search-decoration {
-			-webkit-appearance: none;
-		}
-	}
-
-	&::-webkit-input-placeholder {
-		color: inherit;
-		opacity: 0.54;
-	}
-
-	&::-webkit-file-upload-button {
-		-webkit-appearance: button;
-		font: inherit;
-	}
-
-	fieldset {
-		border: 1px solid #c0c0c0;
-		margin: 0 2px;
-		padding: 0.35em 0.625em 0.75em;
-	}
-
-	legend {
-		box-sizing: border-box;
-		display: table;
-		max-width: 100%;
-		white-space: normal;
-		color: inherit;
-		padding: 0;
-	}
-
-	ol {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	li {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-
-	.arlo-bg-color-primary {
-		background-color: #343f56;
-	}
-
-	.arlo-bg-color-secondary {
-		background-color: #f1992e;
-	}
-
-	.arlo-bg-color-filters {
-		background-color: #f1f7fb;
-	}
-
-	.arlo-bg-color-highlight {
-		background-color: #fffdf7;
-	}
-
-	.arlo-bg-color-normal {
-		background-color: #fcfcfc;
-	}
-
-	.arlo-bg-color-darker {
-		background-color: #565656;
-	}
-
-	.arlo-bg-color-darkest {
-		background-color: #f2f2f2;
-	}
-
-	.arlo-text-color-primary {
-		color: #343f56;
-	}
-
-	.arlo-text-color-secondary {
-		color: #f1992e;
-	}
-
-	.arlo-text-color-contrast {
-		color: #ffffff;
-	}
-
-	.arlo-text-color-lightest {
-		color: #eaeaea;
-	}
-
-	.arlo-text-color-light {
-		color: #bcbcbc;
-	}
-
-	.arlo-text-color-normal {
-		color: #5e5e5e;
-	}
-
-	.arlo-text-color-dark {
-		color: #565656;
-	}
-
-	.arlo-text-color-link {
-		color: #687082;
-	}
-
-	.arlo-font-primary {
-		font-family: "Source Sans Pro", Arial, Tahoma, sans-serif;
-	}
-
-	.arlo-font-secondary {
-		font-family: "Source Sans Pro", Arial, Tahoma, sans-serif;
-	}
-
-	.arlo-font-special {
-		font-family: "Montserrat", Arial, Tahoma, sans-serif;
-	}
-
-	.arlo-font-size-larger {
-		font-size: 110%;
-	}
-
-	.arlo-loading-overlay {
-		position: fixed;
-		z-index: 999;
-		height: 2em;
-		width: 2em;
-		overflow: show;
-		margin: auto;
-		bottom: 50%;
-		top: 50%;
-		left: 50%;
-		right: 50%;
-
-		&:before {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(255, 255, 255, 0.3);
-		}
-
-		&:not(:required) {
-			font: 0/0 a;
-			color: transparent;
-			text-shadow: none;
-			background-color: transparent;
-			border: 0;
-
-			&:after {
-				content: '';
-				display: block;
-				font-size: 10px;
-				width: 1em;
-				height: 1em;
-				margin-top: -0.5em;
-				-webkit-animation: spinner 1500ms infinite linear;
-				animation: spinner 1500ms infinite linear;
-				border-radius: 0.5em;
-				box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
-			}
-		}
-	}
-
-	.arlo-filters {
-        text-align: center;
-
-		.arlo-filter-unordered-list {
-			li {
-				-webkit-transition: 0.3s;
-				transition: 0.3s;
-				text-decoration: none;
-				display: inline-block;
-				position: relative;
-				margin-right: 10px;
-				padding: 10px 20px;
-				background-color: #f5f5f5;
-				border: 2px solid #f5f5f5;
-				border-radius: 4px;
-				color: #687082;
-				cursor: pointer;
-				font-weight: bold;
-
-				&:hover {
-					background-color: transparent;
-					color: #343f56;
-					-webkit-transform: scale(1.1);
-					transform: scale(1.1);
-				}
-			}
-
-			li.selected {
-				padding-right: 25px;
-				color: #fff;
-				background-color: #f1992e;
-				border-color: #f1992e;
-			}
-		}
-
-		input.arlo-search {
-			display: inline;
-			background-color: #fcfcfc;
-			border: 2px solid #ededed;
-			border-radius: 4px;
-			font-size: 15.4px;
-			letter-spacing: 0;
-			line-height: 20px;
-			font-weight: 400;
-			padding: 10px 20px;
-		}
-		
-		.arlo-category-selectors {
-			max-width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-
-			&::after {
-				clear: both;
-				content: "";
-				display: table;
-			}
-
-			>div[id*='filter-'] {
-                margin-bottom: 0;
-			}
-
-			.arlo-filter-unordered-list {
-				li {
-					margin-bottom: 10px;
-					padding: 5px 15px;
-					font-size: 13px;
-					font-weight: 500;
-					text-transform: inherit;
-
-					&:last-child {
-						margin-right: 0;
-					}
-				}
-			}
-		}
-
-		.arlo-other-filters {
-			max-width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-
-			&::after {
-				clear: both;
-				content: "";
-				display: table;
-			}
-		}
-
-		.arlo-filter-unordered-list.arlo-custom-ul {
-			margin-left: 10px;
-		}
-
-		div[id^='filter-'] {
-			display: inline-block;
-			margin-bottom: 10px;
-			vertical-align: bottom;
-		}
-
-		div[id*='filter-'] {
-            display: inline-block;
-            margin-bottom: 10px;
-            vertical-align: bottom;
-		}
-        
-		.arlo-row {
-			text-align: center;
-
-			div[id^='filter-'] {
-				float: none;
-			}
-		}
-
-		.arlo-timezone-select {
-			display: none;
-			max-width: 320px;
-			background-color: transparent;
-
-			&:focus {
-				background-color: transparent !important;
-			}
-		}
-	}
-
-	.arlo-show-more-container {
-        text-align: center;
-
-		.arlo-show-more {
-			-webkit-transition: 0.3s;
-			transition: 0.3s;
-			text-decoration: none;
-		}
-	}
-	.arlo-event-listitem {
-        display: inline-block;
-		width: 49.5%;
-		margin-right: 1%;
-		margin-bottom: 10px;
-		padding-top: 30px;
-		background-color: #f5f5f5;
-		vertical-align: top;
-		font-size: 14px;
-
-		.arlo-event-register {
-			&:before {
-				-webkit-transition: 0.3s;
-				transition: 0.3s;
-				text-decoration: none;
-			}
-		}
-		
-		&:nth-of-type(2n) {
-			margin-right: 0;
-		}
-
-		.arlo-date {
-			display: inline-block;
-			position: relative;
-			float: left;
-			width: 20%;
-			max-width: 80px;
-			margin-right: 3%;
-			text-align: center;
-		}
-
-		.arlo-start-date {
-			margin-bottom: 5px;
-			font-size: 4em;
-			line-height: .8;
-			color: #f1992e;
-		}
-
-		.arlo-start-month {
-			font-size: .9em;
-			line-height: 1.2em;
-			background: transparent;
-			color: #bcbcbc;
-		}
-
-		.arlo-end-date-container {
-			position: absolute;
-			top: 4px;
-			right: -15px;
-		}
-
-		.arlo-end-date {
-			font-size: 1em;
-			line-height: .8;
-			color: #f1992e;
-			font-weight: 700;
-
-			&:before {
-				content: '-';
-				display: inline;
-			}
-		}
-
-		.arlo-end-month {
-			font-size: .6em;
-			line-height: 1.2em;
-			background: transparent;
-			color: #bcbcbc;
-			text-align: right;
-			font-weight: 700;
-		}
-
-		.arlo-title {
-			float: left;
-			width: 75%;
-			margin-left: 2%;
-			word-wrap: break-word;
-
-			.arlo-name {
-				margin-top: 0;
-				margin-bottom: 0;
-
-				a {
-					margin: 0 0 5px 0;
-					display: inline;
-					font-size: 20px;
-					font-weight: bold;
-					color: #343f56;
-				}
-			}
-		}
-
-		.fa {
-			width: 15px;
-			margin-right: 3px;
-			text-align: center;
-			font-size: 14px;
-		}
-
-		.arlo-heading {
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-
-		.arlo-details {
-			padding-left: 20px;
-			padding-right: 20px;
-
-			.arlo-location {
-				margin-right: 10px;
-				text-decoration: none;
-			}
-
-			.arlo-duration {
-				margin-right: 10px;
-				text-decoration: none;
-				padding-right: 5px;
-			}
-
-			.arlo-online {
-				margin-right: 10px;
-				text-decoration: none;
-			}
-
-			.arlo-discount-offer.arlo-offer-li {
-				font-weight: bold;
-				font-size: 14.4px;
-				line-height: 1.4;
-			}
-
-			.arlo-offers {
-                margin-top: 10px;
-				margin-bottom: 5px;
-
-				.arlo-original-price {
-					font-weight: bold;
-					font-size: 14.4px;
-					line-height: 1.4;
-				}
-			}
-
-			.arlo-original-price {
-				text-decoration: line-through;
-				color: #f9b420;
-				font-style: italic;
-			}
-
-			.arlo-discount-offer {
-				color: #f9b420;
-				font-style: italic;
-			}
-
-			.arlo-offer-ul {
-				padding-left: 0;
-
-				.arlo-offer-li {
-					list-style: none;
-					padding: 2px;
-				}
-			}
-		}
-
-		&::after {
-			clear: both;
-			content: "";
-			display: table;
-		}
-
-		.arlo-summary {
-			padding: 15px 0;
-			color: #969696;
-		}
-
-		.arlo-register {
-			width: 100%;
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			text-align: right;
-		}
-	}
-
-	.arlo-clearfix {
-		&:after {
-			visibility: hidden;
-			display: block;
-			font-size: 0;
-			content: " ";
-			clear: both;
-			height: 0;
-		}
-	}
-
-	* {
-		box-sizing: border-box;
-
-		html {
-			.arlo-clearfix {
-				zoom: 1;
-			}
-		}
-
-		&:first-child + html {
-            .arlo-clearfix {
-                zoom: 1;
-            }
-		}
-	}
-
-	#arlo-filter-toggle {
-		display: none;
-	}
-
-	.arlo-region-selector {
-		margin: 1em 0;
-		text-align: center;
-	}
-
-	.arlo-filter-tags {
-		display: inline-block;
-		font-size: 14px;
-
-		.arlo-filter-unordered-list {
-			li {
-				color: #f1992e;
-				padding: 10px 20px;
-				background-color: transparent;
-				border: none;
-
-				&:before {
-					font-family: Arlo-WP;
-					font-size: 20px;
-					margin-right: 8px;
-					line-height: 20px;
-					display: inline-block;
-					border-radius: 5px;
-					vertical-align: top;
-				}
-
-				&:not(.selected) {
-					&:hover {
-						color: #f1992e;
-					}
-				}
-
-				&:last-child {
-					margin-right: 0;
-				}
-			}
-
-			li[data-code="Web_DummyData"] {
-				display: none;
-			}
-
-			li[data-code="Web_Public"] {
-				&:before {
-					content: "";
-				}
-			}
-
-			li[data-code="Web_LiveOnline"] {
-				&:before {
-					content: "";
-				}
-			}
-
-			li[data-code="Web_PrivateOnsite"] {
-				&:before {
-					content: "";
-				}
-			}
-
-			li[data-code="Web_SelfpacedOnline"] {
-				&:before {
-					content: "";
-				}
-			}
-		}
-	}
-
-	.arlo-event-list[min-width~="767px"] {
-		.arlo-event-listitem {
-			width: 49%;
-			margin-right: 1%;
-		}
-	}
-
-	.arlo-event-list[min-width~="1200px"] {
-		.arlo-event-listitem {
-			width: 33%;
-			margin-right: .3%;
-		}
-	}
-
-	.arlo-event-list[min-width~="1500px"] {
-		.arlo-event-listitem {
-			width: 24.5%;
-			margin-right: .5%;
-		}
-	}
-
-	.arlo-event-list[max-width~="660px"] {
-		.arlo-event-listitem {
-			width: 100%;
-			margin-right: 0;
-			margin-bottom: 10px;
-		}
-	}
-
-	.arlo-event-list {
-		.arlo-listitem {
-			position: relative;
-		}
-
-		.arlo-heading {
-			overflow: hidden;
-		}
-	}
-
-	.arlo-event-listitem[max-width~="450px"] {
-		.arlo-date {
-			width: 80px;
-		}
-
-		.arlo-title {
-			width: 65%;
-			margin-left: 4%;
-		}
-	}
-
-	.arlo-event-listitem[max-width~="330px"] {
-		.arlo-title {
-			width: 100%;
-			margin-left: 0;
-		}
-	}
-
-	.tooltipcontent {
-		display: none;
-	}
-
-	.arlo-session-info {
-		cursor: pointer;
-	}
-
-	.arlo-sessions {
-		margin: 0;
-		font-size: 14px;
-
-		.arlo-session {
-			.arlo-session-name {
-				display: block;
-				color: white;
-				letter-spacing: 1px;
-			}
-		}
-
-		li {
-			* {
-				display: inline-block;
-				word-wrap: normal;
-				color: white;
-			}
-		}
-	}
-
-	.arlo-offer-container {
-		font-size: 18px;
-		line-height: 25px;
-	}
-
-	.arlo-offer-li {
-		font-size: 18px;
-		line-height: 25px;
-	}
-
-	.arlo-offer-taxrate {
-		font-size: .7em;
-	}
-
-	.arlo-offer-taxrate-shortname {
-		font-size: .7em;
-	}
-
-	.arlo-event-list[max-width~="450px"] {
-		.arlo-register {
-			position: static;
-		}
-
-		.arlo-event-register {
-			margin-right: -20px;
-		}
-	}
-
-	.arlo-places-remaining {
-		display: block;
-		font-size: 15px;
-		margin-right: 25px;
-		margin-bottom: 10px;
-		text-transform: uppercase;
-	}
-
-	.arlo-event-register {
-		display: inline-block;
-		position: relative;
-		padding: 10px 25px;
-		background-color: #f1992e;
-		color: #ffffff;
-		font-weight: bold;
-		font-size: 16px;
-		line-height: 20px;
-		text-transform: uppercase;
-
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			-webkit-transform: translateX(-100%);
-			transform: translateX(-100%);
-			width: 0;
-			height: 40px;
-			border-top: 40px solid transparent;
-			border-right: 30px solid #f1992e;
-		}
-
-		&:hover {
-			background-color: #f9b420;
-			color: #ffffff;
-
-			&:before {
-				border-right-color: #f9b420;
-			}
-		}
-	}
-
-	.arlo-event-register-info {
-		display: inline-block;
-		position: relative;
-		padding: 10px 25px;
-		background-color: #f1992e;
-		color: #ffffff;
-		font-weight: bold;
-		font-size: 16px;
-		line-height: 20px;
-		text-transform: uppercase;
-		width: 100%;
-		background: #EAEAEA;
-		color: #636363;
-		text-align: center;
-
-		a {
-			color: #f1992e;
-		}
-
-		p {
-			display: inline-block;
-			padding: 0;
-			margin: 0;
-			font-size: 15px;
-		}
-	}
-
-	.arlo-event-register.arlo-waiting-list {
-        background-color: #687082;
-
-		&:hover {
-			background-color: #f9b420;
-			color: #ffffff;
-
-			&:before {
-				border-right-color: #f9b420;
-			}
-		}
-
-		&:before {
-			border-right-color: #687082;
-		}
-	}
-
-	.arlo-show-more {
-		display: inline-block;
-		margin: 0 auto;
-		padding: 12px 30px;
-		cursor: pointer;
-		font-weight: bold;
-		text-transform: uppercase;
-		text-align: center;
-		background-color: transparent;
-		border: 2px solid #687082;
-		border-radius: 4px;
-		color: #687082;
-
-		&:hover {
-			background-color: #687082;
-			color: #ffffff;
-			-webkit-transform: scale(1.1);
-			transform: scale(1.1);
-		}
-	}
-
-	.arlo-no-results-found {
-		text-align: center;
-		font-size: 20px;
-		margin: 20px auto 0;
-		border-radius: 5px;
-		padding: 16px;
-		margin-bottom: 12px;
-		background: #f5f5f5;
-		color: #969696;
-	}
+  font-size: 16px;
+  font-family: "Source Sans Pro", Arial, Tahoma, sans-serif;
+}
+.arlo html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+.arlo body {
+  margin: 0;
+}
+.arlo article,
+.arlo aside,
+.arlo details,
+.arlo figcaption,
+.arlo figure,
+.arlo footer,
+.arlo header,
+.arlo main,
+.arlo menu,
+.arlo nav,
+.arlo section,
+.arlo summary {
+  display: block;
+}
+.arlo audio,
+.arlo canvas,
+.arlo progress,
+.arlo video {
+  display: inline-block;
+}
+.arlo audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+.arlo progress {
+  vertical-align: baseline;
+}
+.arlo template,
+.arlo [hidden] {
+  display: none;
+}
+.arlo a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+.arlo a:active, .arlo a:hover {
+  outline-width: 0;
+}
+.arlo abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+.arlo b,
+.arlo strong {
+  font-weight: inherit;
+}
+.arlo b,
+.arlo strong {
+  font-weight: bolder;
+}
+.arlo code,
+.arlo kbd,
+.arlo samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+.arlo dfn {
+  font-style: italic;
+}
+.arlo h1 {
+  font-size: 2em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin: 0.75em 0;
+}
+.arlo mark {
+  background-color: #ff0;
+  color: #000;
+}
+.arlo small {
+  font-size: 80%;
+}
+.arlo sub,
+.arlo sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.arlo sub {
+  bottom: -0.25em;
+}
+.arlo sup {
+  top: -0.5em;
+}
+.arlo img {
+  border-style: none;
+}
+.arlo svg:not(:root) {
+  overflow: hidden;
+}
+.arlo figure {
+  margin: 1.5em 40px;
+}
+.arlo hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+.arlo pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+.arlo button,
+.arlo input,
+.arlo optgroup,
+.arlo select,
+.arlo textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+.arlo button {
+  overflow: visible;
+  /* 1 */
+  text-transform: none;
+}
+.arlo select {
+  /* 1 */
+  text-transform: none;
+}
+.arlo button,
+.arlo html [type="button"],
+.arlo [type="reset"],
+.arlo [type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+.arlo button,
+.arlo [type="button"],
+.arlo [type="reset"],
+.arlo [type="submit"] {
+   /**
+* Remove the inner border and padding in Firefox.
+*/
+   /**
+* Restore the focus styles unset by the previous rule.
+*/
+}
+.arlo button::-moz-focus-inner,
+.arlo [type="button"]::-moz-focus-inner,
+.arlo [type="reset"]::-moz-focus-inner,
+.arlo [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+.arlo button:-moz-focusring,
+.arlo [type="button"]:-moz-focusring,
+.arlo [type="reset"]:-moz-focusring,
+.arlo [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+.arlo input {
+  overflow: visible;
+}
+.arlo [type="checkbox"],
+.arlo [type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+.arlo [type="number"]::-webkit-inner-spin-button, .arlo [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+.arlo [type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+   /**
+* Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+*/
+}
+.arlo [type="search"]::-webkit-search-cancel-button, .arlo [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.arlo::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+.arlo::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+.arlo fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.arlo legend {
+  box-sizing: border-box;
+  /* 1 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  white-space: normal;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+.arlo optgroup {
+  font-weight: bold;
+}
+.arlo textarea {
+  overflow: auto;
+}
+.arlo ol,
+.arlo ul,
+.arlo li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.arlo select {
+  padding: 10px 70px 14px 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='#55595c' d='M18.706 8.294c-0.387-0.387-1.025-0.387-1.413 0l-5.294 5.294-5.294-5.294c-0.387-0.387-1.025-0.387-1.413 0s-0.387 1.025 0 1.413l6 6c0.194 0.194 0.45 0.294 0.706 0.294s0.513-0.1 0.706-0.294l6-6c0.394-0.387 0.394-1.025 0-1.413z'></path></svg>");
+  background-position: right 1em center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #55595c;
+  border: 2px solid #ededed;
+}
+.arlo select:hover {
+  opacity: 0.7;
 }
 
-.arlo[max-width~="659px"] {
-	.arlo-filters-container {
-		width: 100%;
-
-		* {
-			width: 100%;
-		}
-
-		.arlo-timezone-select {
-			padding: 0 35px 0 35px;
-			width: 100%;
-			max-width: 360px;
-		}
-
-		.arlo-collapse-button {
-			display: block;
-		}
-
-		div[id^='filter-'] {
-			padding-right: 0;
-		}
-
-		.arlo-filters {
-			.arlo-filter-unordered-list {
-				li {
-					margin-bottom: 10px;
-					padding-left: 30px;
-					padding-right: 30px;
-				}
-			}
-
-			.arlo-filter-tags {
-				li {
-					margin-bottom: 10px;
-					padding-left: 30px;
-					padding-right: 30px;
-					font-size: 14px;
-
-					&:before {
-						margin-right: 5px;
-					}
-				}
-			}
-		}
-
-		.arlo-filter-unordered-list.arlo-custom-ul {
-			margin-left: 0;
-		}
-
-		#arlo-filter-toggle {
-			display: block;
-			cursor: pointer;
-			background: #f5f5f5;
-			border-radius: 10px;
-			padding: 18px 26px;
-			margin-bottom: 14px;
-
-			i {
-				float: right;
-				width: auto;
-			}
-
-			.arlo-filter-toggle-hide {
-				display: none;
-			}
-
-			.arlo-filter-toggle-show {
-				display: block;
-			}
-		}
-
-		#filters {
-			display: none;
-		}
-	}
-
-	.arlo-filters-container.arlo-show-filter {
-		#filters {
-			display: block;
-		}
-
-		#arlo-filter-toggle {
-			.arlo-filter-toggle-hide {
-				display: block;
-			}
-
-			.arlo-filter-toggle-show {
-				display: none;
-			}
-		}
-	}
-
-	.arlo-show-more-container {
-		.arlo-show-more {
-			width: 100%;
-		}
-	}
+/** End of Arlo reset style **/
+/** Arlo theme style **/
+.arlo .arlo-bg-color-primary {
+  background-color: #343f56;
+}
+.arlo .arlo-bg-color-secondary {
+  background-color: #f1992e;
+}
+.arlo .arlo-bg-color-filters {
+  background-color: #f1f7fb;
+}
+.arlo .arlo-bg-color-highlight {
+  background-color: #fffdf7;
+}
+.arlo .arlo-bg-color-normal {
+  background-color: #fcfcfc;
+}
+.arlo .arlo-bg-color-darker {
+  background-color: #565656;
+}
+.arlo .arlo-bg-color-darkest {
+  background-color: #f2f2f2;
+}
+.arlo .arlo-text-color-primary {
+  color: #343f56;
+}
+.arlo .arlo-text-color-secondary {
+  color: #f1992e;
+}
+.arlo .arlo-text-color-contrast {
+  color: #ffffff;
+}
+.arlo .arlo-text-color-lightest {
+  color: #eaeaea;
+}
+.arlo .arlo-text-color-light {
+  color: #bcbcbc;
+}
+.arlo .arlo-text-color-normal {
+  color: #5e5e5e;
+}
+.arlo .arlo-text-color-dark {
+  color: #565656;
+}
+.arlo .arlo-text-color-link {
+  color: #687082;
+}
+.arlo .arlo-font-primary,
+.arlo .arlo-font-secondary {
+  font-family: "Source Sans Pro", Arial, Tahoma, sans-serif;
+}
+.arlo .arlo-font-special {
+  font-family: "Montserrat", Arial, Tahoma, sans-serif;
+}
+.arlo .arlo-font-size-larger {
+  font-size: 110%;
 }
 
-.arlo[max-width~="1100px"] {
-	.arlo-filter-tags {
-		.arlo-filter-unordered-list {
-			li {
-				font-size: 0;
-				padding-right: 20px;
-
-				&:before {
-					margin-right: 0;
-				}
-			}
-		}
-	}
+/** End of theme style **/
+.arlo {
+  /********************************
+   ** Filters
+   ********************************/
+  /********************************
+   ** Event List
+   ********************************/
 }
-</style>
+.arlo .arlo-loading-overlay {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  bottom: 50%;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+}
+.arlo .arlo-loading-overlay:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.arlo .arlo-loading-overlay:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.arlo .arlo-loading-overlay:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.arlo a,
+.arlo .arlo-filters .arlo-filter-unordered-list li,
+.arlo .arlo-show-more-container .arlo-show-more,
+.arlo .arlo-event-listitem .arlo-event-register:before,
+.arlo .arlo-more-info-button:after {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.arlo a:active, .arlo a:hover {
+  color: #f9b420;
+  text-decoration: none;
+}
+.arlo .arlo-clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.arlo * {
+  box-sizing: border-box;
+}
+.arlo * html .arlo-clearfix, .arlo *:first-child + html .arlo-clearfix {
+  zoom: 1;
+}
+.arlo #arlo-filter-toggle {
+  display: none;
+}
+.arlo[max-width~="659px"] .arlo-filters-container {
+  width: 100%;
+}
+.arlo[max-width~="659px"] .arlo-filters-container * {
+  width: 100%;
+}
+.arlo[max-width~="659px"] .arlo-filters-container .arlo-timezone-select {
+  padding: 0 35px 0 35px;
+  width: 100%;
+  max-width: 360px;
+}
+.arlo[max-width~="659px"] .arlo-filters-container .arlo-collapse-button {
+  display: block;
+}
+.arlo[max-width~="659px"] .arlo-filters-container div[id^='filter-'] {
+  padding-right: 0;
+}
+.arlo[max-width~="659px"] .arlo-filters-container .arlo-filters .arlo-filter-unordered-list li,
+.arlo[max-width~="659px"] .arlo-filters-container .arlo-filters .arlo-filter-tags li {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.arlo[max-width~="659px"] .arlo-filters-container .arlo-filters .arlo-filter-tags li {
+  font-size: 14px;
+}
+.arlo[max-width~="659px"] .arlo-filters-container .arlo-filters .arlo-filter-tags li:before {
+  margin-right: 5px;
+}
+.arlo[max-width~="659px"] .arlo-filters-container .arlo-filter-unordered-list.arlo-custom-ul {
+  margin-left: 0;
+}
+.arlo[max-width~="659px"] .arlo-filters-container #arlo-filter-toggle {
+  display: block;
+  cursor: pointer;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 18px 26px;
+  margin-bottom: 14px;
+}
+.arlo[max-width~="659px"] .arlo-filters-container #arlo-filter-toggle i {
+  float: right;
+  width: auto;
+}
+.arlo[max-width~="659px"] .arlo-filters-container #arlo-filter-toggle .arlo-filter-toggle-hide {
+  display: none;
+}
+.arlo[max-width~="659px"] .arlo-filters-container #arlo-filter-toggle .arlo-filter-toggle-show {
+  display: block;
+}
+.arlo[max-width~="659px"] .arlo-filters-container #filters {
+  display: none;
+}
+.arlo[max-width~="659px"] .arlo-filters-container.arlo-show-filter #filters {
+  display: block;
+}
+.arlo[max-width~="659px"] .arlo-filters-container.arlo-show-filter #arlo-filter-toggle .arlo-filter-toggle-hide {
+  display: block;
+}
+.arlo[max-width~="659px"] .arlo-filters-container.arlo-show-filter #arlo-filter-toggle .arlo-filter-toggle-show {
+  display: none;
+}
+.arlo[max-width~="659px"] .arlo-show-more-container .arlo-show-more {
+  width: 100%;
+}
+.arlo select,
+.arlo .arlo-filters input.arlo-search {
+  display: inline;
+  background-color: #fcfcfc;
+  border: 2px solid #ededed;
+  border-radius: 4px;
+  font-size: 15.4px;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: 400;
+}
+.arlo .arlo-region-selector {
+  margin: 1em 0;
+  text-align: center;
+}
+.arlo .arlo-filters {
+  text-align: center;
+}
+.arlo .arlo-filters .arlo-category-selectors,
+.arlo .arlo-filters .arlo-other-filters {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.arlo .arlo-filters .arlo-category-selectors::after,
+.arlo .arlo-filters .arlo-other-filters::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.arlo .arlo-filters .arlo-filter-unordered-list.arlo-custom-ul {
+  margin-left: 10px;
+}
+.arlo .arlo-filters .arlo-filter-unordered-list li {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  border-radius: 4px;
+  color: #687082;
+  cursor: pointer;
+  font-weight: bold;
+/*   text-transform: uppercase; */
+}
+.arlo .arlo-filters .arlo-filter-unordered-list li:hover {
+  background-color: transparent;
+  color: #343f56;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.arlo .arlo-filters .arlo-filter-unordered-list li.selected {
+  padding-right: 25px;
+  color: #fff;
+  background-color: #f1992e;
+  border-color: #f1992e;
+}
+.arlo .arlo-filters .arlo-category-selectors > div[id*=' filter-'] {
+  margin-bottom: 0;
+}
+.arlo .arlo-filters .arlo-category-selectors .arlo-filter-unordered-list li {
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: inherit;
+}
+.arlo .arlo-filters .arlo-category-selectors .arlo-filter-unordered-list li:last-child {
+  margin-right: 0;
+}
+.arlo .arlo-filters input.arlo-search {
+  padding: 10px 20px;
+}
+.arlo .arlo-filters div[id^='filter-'], .arlo .arlo-filters div[id*=' filter-'] {
+  display: inline-block;
+  margin-bottom: 10px;
+  vertical-align: bottom;
+}
+.arlo .arlo-filters .arlo-row {
+  text-align: center;
+}
+.arlo .arlo-filters .arlo-row div[id^='filter-'] {
+  float: none;
+}
+.arlo .arlo-filters .arlo-timezone-select {
+  display: none;
+  max-width: 320px;
+  background-color: transparent;
+}
+.arlo .arlo-filters .arlo-timezone-select:focus {
+  background-color: transparent !important;
+}
+.arlo .arlo-filter-tags {
+  display: inline-block;
+  font-size: 14px;
+}
+.arlo .arlo-filter-tags .arlo-filter-unordered-list li {
+  color: #f1992e;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+}
+.arlo .arlo-filter-tags .arlo-filter-unordered-list li:before {
+  font-family: Arlo-WP;
+  font-size: 20px;
+  margin-right: 8px;
+  line-height: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  vertical-align: top;
+}
+.arlo .arlo-filter-tags .arlo-filter-unordered-list li:not(.selected):hover {
+  color: #f1992e;
+}
+.arlo .arlo-filter-tags .arlo-filter-unordered-list li[data-code="Web_DummyData"] {
+  display: none;
+}
+.arlo .arlo-filter-tags .arlo-filter-unordered-list li[data-code="Web_Public"]:before {
+  content: "";
+}
+.arlo .arlo-filter-tags .arlo-filter-unordered-list li[data-code="Web_LiveOnline"]:before {
+  content: "";
+}
+.arlo .arlo-filter-tags .arlo-filter-unordered-list li[data-code="Web_PrivateOnsite"]:before {
+  content: "";
+}
+.arlo .arlo-filter-tags .arlo-filter-unordered-list li[data-code="Web_SelfpacedOnline"]:before {
+  content: "";
+}
+.arlo .arlo-filter-tags .arlo-filter-unordered-list li:last-child {
+  margin-right: 0;
+}
+.arlo[max-width~="1100px"] .arlo-filter-tags .arlo-filter-unordered-list li {
+  font-size: 0;
+  padding-right: 20px;
+}
+.arlo[max-width~="1100px"] .arlo-filter-tags .arlo-filter-unordered-list li:before {
+  margin-right: 0;
+}
+
+.arlo .arlo-event-listitem {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  vertical-align: top;
+  font-size: 14px;
+}
+.arlo .arlo-event-listitem:nth-of-type(2n) {
+  margin-right: 0;
+}
+.arlo .arlo-event-list[max-width~="660px"] .arlo-event-listitem {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.arlo .arlo-event-listitem::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.arlo .arlo-event-list .arlo-listitem {
+  position: relative;
+  padding-top: 30px;
+  background-color: #f5f5f5;
+}
+.arlo .arlo-event-list[max-width~="660px"] .arlo-listitem {
+    padding-bottom: 70px;
+}
+
+
+/* Date */
+
+.arlo .arlo-event-listitem .arlo-date {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 100px;
+  text-align: center;
+}
+.arlo .arlo-event-listitem[max-width~="450px"] .arlo-date {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.arlo .arlo-event-listitem[min-width~="769px"] .arlo-start-date-container {
+    float: right;
+    margin-right: 10px;
+}
+.arlo .arlo-event-listitem .arlo-start-date {
+  margin-bottom: 5px;
+  font-size: 4em;
+  line-height: .8;
+  color: #f1992e;
+}
+.arlo .arlo-event-listitem .arlo-start-month {
+  font-size: .9em;
+  line-height: 1.2em;
+  background: transparent;
+  color: #bcbcbc;
+}
+
+.arlo .arlo-event-listitem[max-width~="450px"] .arlo-start-date-container,
+.arlo .arlo-event-listitem[max-width~="450px"] .arlo-start-date,
+.arlo .arlo-event-listitem[max-width~="450px"] .arlo-start-month,
+.arlo .arlo-event-listitem[max-width~="450px"] .arlo-end-date,
+.arlo .arlo-event-listitem[max-width~="450px"] .arlo-end-month {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.arlo .arlo-event-listitem .arlo-end-date-container {
+  position: absolute;
+  top: 4px;
+  right: -15px;
+  font-size: 1.2em;
+}
+
+.arlo .arlo-event-listitem[max-width~="450px"] .arlo-end-date-container {
+    position: static;
+    display: inline-block;
+}
+
+.arlo .arlo-event-listitem .arlo-end-date {
+  font-size: 1em;
+  line-height: .8;
+  color: #f1992e;
+  font-weight: 700;
+}
+.arlo .arlo-event-listitem .arlo-end-date:before {
+  content: '-';
+  display: inline;
+}
+.arlo .arlo-event-listitem .arlo-end-month {
+  font-size: .6em;
+  line-height: 1.2em;
+  background: transparent;
+  color: #bcbcbc;
+  text-align: right;
+  font-weight: 700;
+}
+
+
+.arlo .arlo-event-listitem .arlo-title {
+  word-wrap: break-word;
+}
+
+.arlo .arlo-event-listitem .arlo-title .arlo-name {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.arlo .arlo-event-listitem .arlo-title .arlo-name a {
+  margin: 0 0 5px 0;
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
+  color: #343f56;
+}
+.arlo .arlo-event-listitem .fa {
+  width: 15px;
+  margin-right: 3px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.arlo .arlo-event-listitem .arlo-details {
+    float: right;
+    width: calc(100% - 120px);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.arlo .arlo-event-listitem[max-width~="450px"] .arlo-details {
+    width: 100%;
+}
+.arlo .arlo-event-listitem .arlo-details .arlo-location,
+.arlo .arlo-event-listitem .arlo-details .arlo-duration,
+.arlo .arlo-event-listitem .arlo-details .arlo-online {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.arlo .arlo-event-listitem .arlo-details .arlo-duration {
+  padding-right: 5px;
+}
+
+.arlo .arlo-event-listitem .arlo-summary {
+  padding: 15px 0;
+  color: #969696;
+}
+
+.arlo .arlo-event-listitem .arlo-details .arlo-discount-offer.arlo-offer-li,
+.arlo .arlo-event-listitem .arlo-details .arlo-offers .arlo-original-price {
+  font-weight: bold;
+  font-size: 14.4px;
+  line-height: 1.4;
+}
+.arlo .arlo-event-listitem .arlo-details .arlo-offers {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.arlo .arlo-event-listitem .arlo-details .arlo-original-price {
+  text-decoration: line-through;
+}
+.arlo .arlo-event-listitem .arlo-details .arlo-discount-offer,
+.arlo .arlo-event-listitem .arlo-details .arlo-original-price {
+  color: #f9b420;
+  font-style: italic;
+}
+.arlo .arlo-event-listitem .arlo-details .arlo-offer-ul {
+  padding-left: 0;
+}
+.arlo .arlo-event-listitem .arlo-details .arlo-offer-ul .arlo-offer-li {
+  list-style: none;
+  padding: 2px;
+}
+
+.arlo .arlo-offer-container,
+.arlo .arlo-offer-li {
+  font-size: 18px;
+  line-height: 25px;
+}
+.arlo .arlo-offer-taxrate,
+.arlo .arlo-offer-taxrate-shortname {
+  font-size: .7em;
+}
+
+
+
+
+.arlo .tooltipcontent {
+  display: none;
+}
+.arlo .arlo-sessions-link div,
+.arlo .arlo-session {
+  cursor: pointer;
+}
+.arlo .arlo-sessions {
+  margin: 0;
+  font-size: 14px;
+}
+.arlo .arlo-sessions .arlo-session .arlo-session-name {
+  display: block;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.arlo .arlo-sessions li * {
+  display: inline-block;
+  word-wrap: normal;
+}
+
+
+
+
+/* Registration */
+.arlo .arlo-event-listitem .arlo-register {
+  float: right;
+  text-align: right;
+}
+
+.arlo .arlo-event-listitem[max-width~="660px"] .arlo-register {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.arlo .arlo-places-remaining {
+  display: block;
+  font-size: 15px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.arlo .arlo-event-register,
+.arlo .arlo-event-register-info,
+.arlo .arlo-more-info-button {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  padding: 10px 0;
+  background-color: #f1992e;
+  color: #ffffff;
+  font-weight: bold; 
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.arlo .arlo-more-info-button {
+  margin-right: 20px;
+  background-color: #687082;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.arlo .arlo-event-list[max-width~="450px"] .arlo-event-register,
+.arlo .arlo-event-list[max-width~="450px"] .arlo-event-register-info {
+    float: right;
+    width: calc(50% - 15px);
+}
+.arlo .arlo-event-list[max-width~="450px"] .arlo-more-info-button {
+  float: left;
+  width: calc(50% - 15px);
+}
+
+.arlo .arlo-event-register:before,
+.arlo .arlo-more-info-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 40px;
+}
+
+.arlo .arlo-event-register:before {
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  border-top: 40px solid transparent;
+  border-right: 30px solid #f1992e;
+}
+
+.arlo .arlo-more-info-button:after {
+  right: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  border-bottom: 40px solid transparent;
+  border-left: 30px solid #687082;
+}
+
+.arlo .arlo-event-register:hover,
+.arlo .arlo-event-register.arlo-waiting-list:hover,
+.arlo .arlo-more-info-button:hover {
+  background-color: #f9b420;
+  color: #ffffff;
+}
+.arlo .arlo-event-register:hover:before,
+.arlo .arlo-event-register.arlo-waiting-list:hover:before {
+  border-right-color: #f9b420;
+}
+.arlo .arlo-more-info-button:hover:after {
+  border-left-color: #f9b420;
+}
+
+.arlo .arlo-event-register.arlo-waiting-list {
+  background-color: #343f56;
+}
+.arlo .arlo-event-register.arlo-waiting-list:before {
+  border-right-color: #343f56;
+}
+
+.arlo .arlo-event-register-info {
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #636363;
+  line-height: 1;
+  text-align: center;
+  vertical-align: bottom;
+}
+.arlo .arlo-event-register-info a {
+  display: block;
+  color: #f1992e;
+}
+.arlo .arlo-event-register-info p {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+
+
+
+.arlo .arlo-show-more-container {
+  text-align: center;
+}
+.arlo .arlo-show-more {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #687082;
+  border-radius: 4px;
+  color: #687082;
+}
+.arlo .arlo-show-more:hover {
+  background-color: #687082;
+  color: #ffffff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.arlo .arlo-no-results-found {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #f5f5f5;
+  color: #969696;
+}
+
+
+
+
+
+.arlo .arlo-event-list .arlo-dynamic-panel {
+  background-color: #f5f5f5;
+}
+
+
+.arlo .arlo-event-list[max-width~="768px"] .arlo-static-panel {
+	float: left;
+	display: block;
+	margin-right: 2.35765%;
+	width: 100%;
+	margin-right: 0;
+}
+
+.arlo .arlo-event-list[max-width~="768px"] .arlo-static-panel:last-child {
+	margin-right: 0;
+}
+
+.arlo .arlo-event-list[max-width~="768px"] .arlo-dynamic-panel {
+	float: left;
+	display: block;
+  width: 102.35765%;
+  margin-right: 0;
+}
+
+.arlo .arlo-event-list[max-width~="768px"] .arlo-dynamic-panel:last-child {
+	width: 100%;
+}
+
+
+.arlo .arlo-event-list[min-width~="769px"] .arlo-static-panel {
+	float: left;
+	display: block;
+	width: 34.11922%;
+	position: absolute;
+	margin-right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.arlo .arlo-event-list[min-width~="769px"] .arlo-static-panel:last-child {
+	width: 31.76157%;
+}
+
+.arlo .arlo-event-list[min-width~="769px"] .arlo-dynamic-panel {
+	float: left;
+	display: block;
+	margin-right: 2.35765%;
+	width: 65.88078%;
+	margin-right: 0;
+	float: right;
+}
+
+.arlo .arlo-event-list[min-width~="769px"] .arlo-dynamic-panel:last-child {
+	margin-right: 0;
+}
+
+.arlo .arlo-event-list[min-width~="1000px"] .arlo-static-panel {
+	float: left;
+	display: block;
+	width: 25.58941%;
+	position: absolute;
+	margin-right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.arlo .arlo-event-list[min-width~="1000px"] .arlo-static-panel:last-child {
+	width: 23.23176%;
+}
+
+.arlo .arlo-event-list[min-width~="1000px"] .arlo-dynamic-panel {
+	float: right;
+	display: block;
+  margin-right: 0;
+	width: 74.41059%;
+}
+
+.arlo .arlo-event-list[min-width~="1000px"] .arlo-dynamic-panel:last-child {
+	margin-right: 0;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information {
+	float: left;
+	display: block;
+	width: 100%;
+	margin-right: 2.35765%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information:last-child {
+	margin-right: 0;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information a {
+	text-decoration: none;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content {
+  position: relative;
+	overflow: hidden;
+  width: 100%;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-info-panel-toolbar {
+	height: 50px;
+	padding-left: 20px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-info-panel-toolbar span {
+	line-height: 50px;
+	padding-right: 15px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-info-panel-toolbar .arlo-back {
+	cursor: pointer;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-info-panel {
+	padding: 0 20px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-presenterstarget > ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-template-details > div > ul,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-template-details .arlo-content-field-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-dynamic-panel.arlo-sessions ul,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-venuetarget > ul,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-facilityinfo-info-list,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-profile-info-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-presenterstarget > ul > li {
+	list-style: none;
+	margin-bottom: 10px;
+	padding-left: 0;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-template-details > div > ul > li,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-template-details .arlo-content-field-list > li {
+	list-style: none;
+	margin-bottom: 10px;
+	padding-left: 0;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-dynamic-panel.arlo-sessions ul > li,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-venuetarget > ul > li,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-facilityinfo-info-list > li,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-profile-info-list > li {
+	list-style: none;
+	margin-bottom: 10px;
+	padding-left: 0;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-presenterstarget ul,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-venuetarget ul,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-eventTemplatetarget ul {
+	margin: 0;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-content-field-text ul,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-profile-field-text ul,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-facilityinfo-field-text ul {
+	margin-left: 30px;
+	padding: 0;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-content-field-text ul li,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-profile-field-text ul li,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-facilityinfo-field-text ul li {
+	list-style: disc;
+	padding: 0;
+	margin: 0;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-dynamic-panel.arlo-sessions ul > li {
+	margin-bottom: 5px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-dynamic-panel .arlo-content-field-name {
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-dynamic-panel .arlo-h3 {
+	margin-top: 0;
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-toolbar-button {
+	cursor: pointer;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-toolbar-button-selected {
+	color: #969696;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-session-name:after {
+	content: "‚";
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-static-panel {
+	height: 100%;
+	padding: 20px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-static-panel .arlo-icon-col {
+	float: left;
+	display: block;
+	width: 8.5298%;
+	text-align: center;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-static-panel .arlo-icon-col:last-child {
+	width: 6.17215%;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-static-panel .fa {
+	font-size: 20px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-static-panel .arlo-detail-col {
+	float: left;
+	display: block;
+	margin-right: 2.35765%;
+	width: 91.4702%;
+	margin-right: 0;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+
+.arlo .arlo-event-listitem[max-width~="768px"] .arlo-more-information .arlo-more-information-content .arlo-static-panel .arlo-detail-col {
+    margin-bottom: 5px;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-static-panel .arlo-detail-col:last-child {
+	margin-right: 0;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-static-panel .arlo-subcontrol,
+.arlo .arlo-event-listitem .arlo-more-information .arlo-more-information-content .arlo-static-panel .arlo-loadVenueButton {
+	cursor: pointer;
+}
+
+.arlo .arlo-event-listitem .arlo-more-information .arlo-static-panel .arlo-presenter a:hover {
+  color: #343f56;
+}
+
+.arlo .arlo-event-listitem .arlo-collapsed {
+	display: none;
+}
+
+.arlo .arlo-event-listitem .arlo-map-container {
+	float: left;
+	display: block;
+	margin-right: 2.35765%;
+	width: 100%;
+}
+
+.arlo .arlo-event-listitem .arlo-map-container:last-child {
+	margin-right: 0;
+}
+
+.arlo iframe {
+    border: none;
+    overflow: hidden;
+}
+
+iframe.widget {
+    width: 100%;
+}
