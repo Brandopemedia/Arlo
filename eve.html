@@ -1,0 +1,91 @@
+<html>
+<!--
+Arlo Web Control Demo - Events list
+Documentation: https://developer.arlo.co/doc/webcontrols/upcomingevents
+-->
+  <!-- Target Elements -->
+  <div class="arlo">
+    <div class="arlo-filters-container">
+      <div id="filters"></div>
+
+      <div id="arlo-filter-toggle">
+        <div class="arlo-filter-toggle-show">
+          Show filters <i class="fa fa-chevron-down"></i>
+        </div>
+        <div class="arlo-filter-toggle-hide">
+          Hide filters <i class="fa fa-chevron-up"></i>
+        </div>
+      </div>
+    </div>
+    <div id="upcoming-events"></div>
+  </div>
+
+  <!-- Templates -->
+  <script type='text/template' id='filter-template'>
+    <div class="arlo-filters arlo-font-primary">
+      <div class="arlo-other-filters arlo-clearfix arlo-font-primary">
+        <%= showFilter({filterCode: "templatecategory", callbacks: {onRender: onFilterLoad}}) %>
+        <%= showFilter({filterCode: "months"}) %>
+        <%= showFilter({filterCode: "locname", callbacks: {onRender: "locationfiltertoggle"}}) %>
+      </div>
+    </div>
+  </script>
+
+
+  <script type='text/template' id='upcoming-events-template'>
+            
+    <div class="arlo-date">
+      <div class="arlo-date-container arlo-text-color-contrast">
+        <div class="arlo-start-date">
+          <%= SmartDateFields.startDay %>
+        </div>
+        <div class="arlo-start-month">
+          <%= SmartDateFields.startMonth %>
+        </div>
+      </div>
+    </div>
+
+    <div class="arlo-event-image" style="background-image: url(<%= ListImageUri %>)"></div>
+
+    <div class="arlo-detail-container">
+
+      <div class="arlo-detail">
+      
+          <% if (typeof(Location.Name) !== "undefined" && Location.Name !== "") { %>
+            <div class="arlo-location">
+                <i class="fa fa-map-marker"></i><%- Location.Name %>
+            </div>
+          <% }%>
+          
+          <% if (typeof(Provider.Name) !== "undefined" && Provider.Name !== "") { %>
+            <div class="arlo-provider-name">
+                Provided by <%= Provider.Name %>
+            </div>
+          <% }%>
+          <div class="arlo-detail-header">
+              <div class="arlo-name">
+                <a href="<%= ViewUri %>" class="arlo-text-color-primary"><%- Name %></a>
+              </div>
+
+              <div class="arlo-duration">
+                <i class="fa fa-clock-o"></i><%- Duration %>
+              </div>
+          </div>
+  
+          <div class="arlo-summary">
+            <%- Summary %>
+          </div>
+
+      </div>
+      <%= formatRegistrationInfo('link') %>
+    </div>
+
+  </script>
+
+  <!-- Dependencies -->
+  <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="//packages.arlocdn.net/jscontrols/1.0/resources/resizesensor.js" charset="utf-8"></script>
+  <script type="text/javascript" src="//packages.arlocdn.net/jscontrols/1.0/resources/elementqueries.js" charset="utf-8"></script>
+  <script type="text/javascript" src="//connect.arlocdn.net/jscontrols/1.1/init.js" charset="utf-8" defer="defer"></script>
+</html>
