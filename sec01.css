@@ -236,7 +236,7 @@ html {
 
 	mark {
 		background-color: #ff0;
-		color: #000;
+		color: #000000;
 	}
 
 	small {
@@ -326,8 +326,8 @@ html {
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
-		background-color: #f1f0ec;
-		color: #595f6b;
+		background-color: #1765ee;
+		color: #ffffff;
 		text-decoration: none;
 		line-height: 1;
 		appearance: none;
@@ -452,8 +452,8 @@ html {
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
-		background-color: #f1f0ec;
-		color: #595f6b;
+		background-color: #1765ee;
+		color: #ffffff;
 		text-decoration: none;
 		line-height: 1;
 		display: inline-block;
@@ -493,8 +493,8 @@ html {
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
-		background-color: #f1f0ec;
-		color: #595f6b;
+		background-color: #1765ee;
+		color: #ffffff;
 		text-decoration: none;
 		line-height: 1;
 
@@ -535,14 +535,14 @@ html {
 				font-size: 14px;
 				font-weight: bold;
 				text-transform: uppercase;
-				background-color: #f1f0ec;
-				color: #595f6b;
+				background-color: #1765ee;
+				color: #ffffff;
 				text-decoration: none;
 				line-height: 1;
 				display: block;
 				margin-bottom: 5px;
 				color: white;
-				background-color: #f46f72;
+				background-color: #1765ee;
 
 				&:after {
 					content: "";
@@ -571,17 +571,17 @@ html {
 		}
 
 		input#categoryid12 + label {
-			background-color: #64ada4;
+			background-color: #1765ee;
 		}
 		input#categoryid5 + label {
 			background-color: #74c5e3;
 		}
 		input#categoryid3 + label {
-			background-color: #9a89d1;
+			background-color: #1765ee;
 		}
 		input#categoryid-all + label {
-			background-color: #f1f0ec;
-			color: #595f6b;
+			background-color: #1765ee;
+			color: #ffffff;
 		}
 	}
 
@@ -598,8 +598,8 @@ html {
 			font-size: 14px;
 			font-weight: bold;
 			text-transform: uppercase;
-			background-color: #f1f0ec;
-			color: #595f6b;
+			background-color: #1765ee;
+			color: #ffffff;
 			text-decoration: none;
 			line-height: 1;
 
@@ -635,8 +635,8 @@ html {
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
-		background-color: #f1f0ec;
-		color: #595f6b;
+		background-color: #1765ee;
+		color: #ffffff;
 		text-decoration: none;
 		line-height: 1;
 
@@ -750,7 +750,7 @@ html {
 	}
 
 	.arlo-text-color-secondary {
-		color: #9a89d1;
+		color: #1765ee;
 	}
 
 	.arlo-text-color-contrast {
@@ -762,7 +762,7 @@ html {
 	}
 
 	.arlo-text-color-light {
-		color: #595f6b;
+		color: #ffffff;
 	}
 
 	.arlo-text-color-normal {
@@ -770,11 +770,11 @@ html {
 	}
 
 	.arlo-text-color-dark {
-		color: #595f6b;
+		color: #ffffff;
 	}
 
 	.arlo-text-color-link {
-		color: #9a89d1;
+		color: #1765ee;
 	}
 
 	.arlo-font-primary {
@@ -873,7 +873,7 @@ html {
 	}
 
 	.arlo-custom-li.selected {
-		background: #f46f72;
+		background: #1765ee;
 		color: #fff;
 	}
 
@@ -896,13 +896,13 @@ html {
 
 			li[data-id="venue"] {
 				&:before {
-					content: "";
+					content: "";
 				}
 			}
 
 			li[data-id="online"] {
 				&:before {
-					content: "";
+					content: "";
 				}
 			}
 		}
@@ -973,18 +973,18 @@ html {
 
 			li {
 				padding-right: 12px;
-				color: #595f6b;
+				color: #ffffff;
 			}
 		}
 	}
 
 	.arlo-advertisedduration {
-		color: #595f6b;
+		color: #ffffff;
 		line-height: 1;
 	}
 
 	arlo-offer-container {
-		color: #595f6b;
+		color: #ffffff;
 	}
 
 	.arlo-next-running {
@@ -996,7 +996,7 @@ html {
 			margin-top: 5px;
 
 			&:hover {
-				background-color: #f46f72;
+				background-color: #1765ee;
 			}
 		}
 	}
@@ -1007,7 +1007,7 @@ html {
 		margin-right: 5px;
 		text-decoration: none;
 		margin-top: 5px;
-		color: #595f6b;
+		color: #ffffff;
 		background-color: white;
 
 		&:hover {
@@ -1032,7 +1032,7 @@ html {
 			&:hover {
 				.arlo-next-running-column {
 					a.arlo-register-interest {
-						color: #595f6b;
+						color: #ffffff;
 						background-color: white;
 
 						&:hover {
@@ -1048,7 +1048,7 @@ html {
 
 			.arlo-next-running-column {
 				a.arlo-register-interest {
-					color: #595f6b;
+					color: #ffffff;
 					background-color: white;
 				}
 
@@ -1062,7 +1062,7 @@ html {
 	.arlo-next-running-title {
 		display: inline-block;
 		vertical-align: baseline;
-		color: #595f6b;
+		color: #ffffff;
 	}
 
 	div[class^="nextrunning-"] {
@@ -1095,7 +1095,7 @@ html {
 		margin: 0 auto;
 		width: 100%;
 		text-align: center;
-		background: #9a89d1;
+		background: #1765ee;
 		color: #fff;
 		padding: 15px;
 
@@ -1118,7 +1118,7 @@ html {
 		margin: 0 auto;
 		width: 100%;
 		text-align: center;
-		background: #9a89d1;
+		background: #1765ee;
 		color: #fff;
 		padding: 15px;
 
@@ -1223,7 +1223,7 @@ html {
 			line-height: 30px;
 			padding: 2px;
 			text-align: center;
-			color: #595f6b;
+			color: #ffffff;
 		}
 
 		.arlo-offers-column {
@@ -1234,7 +1234,7 @@ html {
 			line-height: 30px;
 			padding: 2px;
 			text-align: center;
-			color: #595f6b;
+			color: #ffffff;
 		}
 
 		.arlo-online-column {
@@ -1492,28 +1492,28 @@ html {
 	.arlo-color5 {
 		.arlo-next-running {
 			>* {
-				background-color: #f46f72;
+				background-color: #1765ee;
 			}
 		}
 
 		.arlo-find-events {
-			background-color: #f46f72;
+			background-color: #1765ee;
 		}
 
 		.arlo-category-name {
-			color: #f46f72;
+			color: #1765ee;
 		}
 
 		.arlo-eventtemplatecategoryitems-listitem {
-			border-left-color: #f46f72;
+			border-left-color: #1765ee;
 
 			a {
-				color: #f46f72;
+				color: #000000;
 			}
 
 			&:hover {
 				a {
-					color: #f46f72;
+					color: #1765ee;
 				}
 			}
 		}
@@ -1552,28 +1552,28 @@ html {
 	.arlo-color2 {
 		.arlo-next-running {
 			>* {
-				background-color: #64ada4;
+				background-color: #1765ee;
 			}
 		}
 
 		.arlo-find-events {
-			background-color: #64ada4;
+			background-color: #1765ee;
 		}
 
 		.arlo-category-name {
-			color: #64ada4;
+			color: #1765ee;
 		}
 
 		.arlo-eventtemplatecategoryitems-listitem {
-			border-left-color: #64ada4;
+			border-left-color: #1765ee;
 
 			a {
-				color: #64ada4;
+				color: #1765ee;
 			}
 
 			&:hover {
 				a {
-					color: #64ada4;
+					color: #1765ee;
 				}
 			}
 		}
@@ -1612,28 +1612,28 @@ html {
 	.arlo-color3 {
 		.arlo-next-running {
 			>* {
-				background-color: #9a89d1;
+				background-color: #1765ee;
 			}
 		}
 
 		.arlo-find-events {
-			background-color: #9a89d1;
+			background-color: #1765ee;
 		}
 
 		.arlo-category-name {
-			color: #9a89d1;
+			color: #1765ee;
 		}
 
 		.arlo-eventtemplatecategoryitems-listitem {
-			border-left-color: #9a89d1;
+			border-left-color: #1765ee;
 
 			a {
-				color: #9a89d1;
+				color: #1765ee;
 			}
 
 			&:hover {
 				a {
-					color: #9a89d1;
+					color: #1765ee;
 				}
 			}
 		}
@@ -1653,7 +1653,7 @@ html {
 		background: #f8f8f8;
 		padding: 5px 20px 10px;
 		margin-bottom: 1px;
-		border-left: 3px solid #9a89d1;
+		border-left: 3px solid #1765ee;
 		-webkit-transition: all .2s ease-in-out;
 		transition: all .2s ease-in-out;
 
@@ -1719,7 +1719,7 @@ html {
 		}
 
 		.arlo-delivery-title {
-			color: #595f6b;
+			color: #ffffff;
 		}
 		
 		.arlo-detail {
@@ -1792,3 +1792,4 @@ html {
 		}
 	}
 }
+
