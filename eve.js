@@ -1,4 +1,3 @@
-<script>
 (function($, ElementQueries) {
   document.addEventListener("arlojscontrolsloaded", function() {
     var platformID = "divergenceplus.arlo.co"; // Change platformID to point at your own account
@@ -130,4 +129,3 @@
         }
     };
 })(jQuery, window.ElementQueries);
-</script>
