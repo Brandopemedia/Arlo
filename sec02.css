@@ -321,14 +321,14 @@ html {
 		transition: all .2s ease-in;
 		-webkit-transition: all .2s ease-in;
 		position: relative;
-		padding: 13px 29px;
+		padding: 13px 13px;
 		cursor: pointer;
 		border-radius: 2px;
 		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
-		background-color: #1765ee;
-		color: #ffffff;
+		background-color: #d1d1d1;
+		color: #333;
 		text-decoration: none;
 		line-height: 1;
 		appearance: none;
@@ -763,7 +763,7 @@ html {
 	}
 
 	.arlo-text-color-light {
-		color: #ffffff;
+		color: #000000;
 	}
 
 	.arlo-text-color-normal {
@@ -974,13 +974,13 @@ html {
 
 			li {
 				padding-right: 12px;
-				color: #ffffff;
+				color: #000000;
 			}
 		}
 	}
 
 	.arlo-advertisedduration {
-		color: #ffffff;
+		color: #000000;
 		line-height: 1;
 	}
 
