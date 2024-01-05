@@ -145,42 +145,42 @@ ol, ul, li {
 }
 
 
-.arlo[max-width~="1000px"] #upcoming-events-list1 .offers,
-.arlo[max-width~="1000px"] #upcoming-events-list1 .duration {
+.arlo[max-width~="330px"] #upcoming-events-list1 .offers,
+.arlo[max-width~="330px"] #upcoming-events-list1 .duration {
     float: left;
 }
 
-.arlo[max-width~="1000px"] #upcoming-events-list1 .registration {
+.arlo[max-width~="330px"] #upcoming-events-list1 .registration {
     float: right;
 }
 
-.arlo[max-width~="1000px"] #upcoming-events-list1 .arlo-event-register {
+.arlo[max-width~="330px"] #upcoming-events-list1 .arlo-event-register {
     margin-top: 0;
 }
 
-.arlo[max-width~="1000px"] #upcoming-events-list1 .offers {
+.arlo[max-width~="330px"] #upcoming-events-list1 .offers {
     clear: both;
 }
 
-.arlo[max-width~="630px"] #upcoming-events-list1 .arlo-event-listitem {
+.arlo[max-width~="330px"] #upcoming-events-list1 .arlo-event-listitem {
     display: block;
     margin-bottom: 10px;
 }
 
-.arlo[max-width~="630px"] #upcoming-events-list1 .left {
+.arlo[max-width~="330px"] #upcoming-events-list1 .left {
     display: block;
     width: auto;
     height: auto;
     overflow: auto;
 }
 
-.arlo[max-width~="630px"] #upcoming-events-list1 .left > div {
+.arlo[max-width~="330px"] #upcoming-events-list1 .left > div {
     float: left;
     margin-right: 10px;
     margin-bottom: 0;
 }
 
-.arlo[max-width~="630px"] #upcoming-events-list1 .left .location {
+.arlo[max-width~="330px"] #upcoming-events-list1 .left .location {
     float: right;
 }
 
