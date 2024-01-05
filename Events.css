@@ -377,37 +377,4 @@ ol, ul, li {
     margin-bottom: 7px;
     text-transform: uppercase;
 }
-/* Add your existing styles here */
-
-/* Mobile Styles */
-@media only screen and (max-width: 300px) {
-    #upcoming-events-list1 .left,
-    #upcoming-events-list1 .middle,
-    #upcoming-events-list1 .right {
-        width: 100%;
-        display: block;
-    }
-
-    #upcoming-events-list1 .left > div {
-        float: none;
-        margin-right: 0;
-    }
-
-    #upcoming-events-list1 .arlo-loading-overlay {
-        height: 1.5em;
-        width: 1.5em;
-    }
-
-    /* Add more styles as needed for mobile devices */
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* Add styles for tablets */
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 992px) {
-    /* Add styles for desktops */
-}
 </style>
