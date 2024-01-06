@@ -1,4 +1,3 @@
-<style>
 body {
   margin: 1em 0;
 }
@@ -112,7 +111,7 @@ body {
 
 .arlo a,
 .arlo .arlo-show-more {
-  color: #1765ee;
+  color: #e9344d;
   text-decoration: none;
   font-weight: normal;
 }
@@ -153,19 +152,19 @@ body {
 }
 
 .arlo ul.arlo-event-list li.arlo-event-listitem .arlo-list-item:hover {
-  background-color: #1765ee;
+  background-color: #e9344d;
   opacity: 1;
   color: white;
-  border-color: #1765ee;
+  border-color: #e9344d;
 }
 
 .arlo ul.arlo-event-list li.arlo-event-listitem .arlo-list-item:hover .arlo-detail {
-  color: #ffffff;
+  color: #ffb1bc;
 }
 
 .arlo ul.arlo-event-list li.arlo-event-listitem .arlo-list-item:hover .arlo-event-register {
   background-color: white;
-  color: #1765ee;
+  color: #e9344d;
 }
 
 .arlo ul.arlo-event-list li.arlo-event-listitem .arlo-list-item:hover .arlo-event-register:hover,
@@ -243,12 +242,12 @@ body {
     padding: 13px 25px;
     text-decoration: none;
     text-transform: uppercase;
-    background: #1765ee;
+    background: #e9344d;
     color: white;
 }
 
 .arlo .arlo-show-more {
-  background: #1765ee;
+  background: #e9344d;
   color: white;
   cursor: pointer;
 }
@@ -273,7 +272,7 @@ body {
 .arlo li.arlo-offer-li.arlo-discount-offer,
 .arlo .arlo-original-price {
   font-weight: normal;
-  color: #1765ee;
+  color: #e9344d;
 }
 
 .arlo .tooltip {
@@ -453,4 +452,3 @@ body {
 .arlo .arlo-sessions li * .arlo-session-name {
   display: block;
 }
-</style>
