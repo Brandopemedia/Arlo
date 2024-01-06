@@ -1,3 +1,4 @@
+<style>
 /** Normalize **/
 @charset "UTF-8";
 /** Arlo Theme General Style **/
@@ -1568,3 +1569,4 @@ body {
 .arlo.arlo-catalogue select {
 	padding: 8px 50px 8px 20px;
 }
+</style>
