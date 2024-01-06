@@ -1,3 +1,4 @@
+<style>
 body {
   margin: 1em 0;
 }
@@ -452,3 +453,4 @@ body {
 .arlo .arlo-sessions li * .arlo-session-name {
   display: block;
 }
+</style>
